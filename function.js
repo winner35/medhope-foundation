@@ -22,3 +22,14 @@ const toggleBtn = document.getElementById("theme-toggle");
         toggleBtn.textContent = "🌙"; // Moon for light mode (switch to dark)
       }
     });
+
+     // Make sure the carousel auto-slides every 1.5 seconds
+  var collabCarousel = document.getElementById('collabCarousel');
+  if (collabCarousel) {
+    var carousel = new bootstrap.Carousel(collabCarousel, {
+      interval:1500,
+      ride: 'carousel',
+      pause: false,
+      wrap: true
+    });
+  }
