@@ -124,6 +124,8 @@ li a:hover{
     text-align: center;
     justify-content: center;
     animation: change 30s infinite ease-in-out;
+    opacity: 0;
+    animation: heroFadeIn 1.5s ease-in-out 0.2s forwards, change 30s infinite ease-in-out;
     }
     .content{
       position: absolute;
@@ -162,6 +164,10 @@ li a:hover{
       }
       
      }
+     @keyframes heroFadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
     /* Join us section */
     #join-us input {
       border:0.3px solid #000000;
@@ -257,3 +263,20 @@ li a:hover{
 .contact-form textarea {
   font-size: 1rem;
 }
+
+/* Responsive styles moved to Responsive.css */
+
+/* Ensure images and containers are always responsive */
+/* img, .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.container, .container-fluid {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+} */
