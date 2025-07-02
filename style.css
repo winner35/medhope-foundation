@@ -280,3 +280,101 @@ li a:hover{
   margin-left: 0;
   margin-right: 0;
 } */
+
+/* Responsive fixes using Bootstrap utilities */
+
+/* 1. Navbar: Remove .hidden from .navbar-collapse for Bootstrap collapse to work */
+.navbar-collapse {
+  /* Remove any custom .hidden class from HTML for responsive collapse */
+  display: flex !important;
+  flex-basis: auto;
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-collapse.show {
+    display: block !important;
+    background: linear-gradient(90deg, #040320 0%, #0b156e 100%);
+    padding: 1rem;
+  }
+}
+
+/* 2. Hero Section: Use Bootstrap spacing and flex utilities */
+.hero {
+  min-height: 60vh;
+  padding: 6rem 0 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .hero {
+    padding: 3rem 0 2rem 0;
+    min-height: 40vh;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+}
+
+/* 3. Section Headings: Responsive font size */
+.Semi {
+  font-size: 2.5rem;
+}
+@media (max-width: 767.98px) {
+  .Semi {
+    font-size: 1.5rem;
+  }
+}
+
+/* 4. Cards and Images: Use Bootstrap's responsive classes */
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .card-img-top {
+    height: 120px;
+  }
+}
+
+/* 5. Section Padding: Use Bootstrap spacing utilities */
+.section-padding {
+  padding: 3rem 0;
+}
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 1.5rem 0;
+  }
+}
+
+/* 6. Forms: Use Bootstrap grid for layout */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 7. General: Ensure images are responsive */
+img, .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 8. Fix for overflow and text visibility */
+body, html {
+  overflow-x: hidden;
+}
+
+/* 9. Utility: Remove fixed heights/paddings that break mobile */
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 2rem 0 1rem 0;
+  }
+  .content {
+    padding: 0 1rem;
+  }
+}
