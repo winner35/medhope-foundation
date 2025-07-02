@@ -264,6 +264,22 @@ li a:hover{
   font-size: 1rem;
 }
 
+/* Dark mode fixes for Impact and Collaborations sections */
+.dark-theme #Impact,
+.dark-theme #collaborations {
+  background-color: #181b24 !important;
+  color: #f0f0f0;
+}
+.dark-theme #Impact .card,
+.dark-theme #collaborations .card {
+  background-color: #23263a !important;
+  color: #f0f0f0;
+}
+.dark-theme #Impact h2,
+.dark-theme #collaborations h2 {
+  color: #b0b8d1;
+}
+
 /* Responsive styles moved to Responsive.css */
 
 /* Ensure images and containers are always responsive */
