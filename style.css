@@ -48,6 +48,11 @@
 .navbar {
   background: linear-gradient(90deg, #040320 0%, #0b156e 100%);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
 }
 /* navbar menus */
 .navbar-brand{
@@ -83,6 +88,16 @@
 }
 .nav-link:hover::before, .nav-link:hover::after,
 .nav-link:focus::before, .nav-link:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+.nav-link.active::before,
+.nav-link.active::after {
   opacity: 1;
   transform: translateY(0);
 }
