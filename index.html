@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NGO Partnership </title>
+  <title>MedHope Foundation</title>
   <!-- Framework css-->
   <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <!-- styling css -->
@@ -18,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="#Home">MedHope Foundation</a>
+      <a class="navbar-brand fw-bold text-primary" href="#Hero">MedHope Foundation</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,32 +26,31 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#Services">Services</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#Impact">Our torch</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#join-us">Join us</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#Join">Talk to us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Join">Your message</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#Testimonal">Testimonal</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
           <li class="nav-item"><a class="btn ms-lg-4 mt-2 mt-lg-0 text-dark bg-primary" href="#donate">Donate</a></li>
         </ul>
-        <button id="theme-toggle" class="btn btn-outline-secondary btn-toggle ms-2 mt-2 mt-lg-0">🌙</button>
       </div>
     </div>
   </nav>
-
+   <button id="theme-toggle" class="btn btn-outline-secondary btn-toggle ms-2 mt-2 mt-lg-0">🌙</button>
   <!-- Hero Section -->
-
-  <section class="hero d-flex section-padding align-items-center text-center">
-    <div class="container text-white content">
+  <section id="Hero" class="hero d-flex align-items-center text-center w-100" style="min-height: 100vh; background-image: url('./Images/2.jpg'); background-size: cover; background-position: center; position: relative;">
+    <div class="container text-white position-relative" style="z-index:2;">
       <h1 class="display-4 fw-bold text-center">"Bring Comfort. Share Care. Change a Life."</h1>
       <p class="lead">With your help, we can reach those in pain with healing hands and hopeful hearts.</p>
-      <a href="#donate" class="btn text-center text-white">Donate Now</a>
+      <a href="#donate" class="btn text-center text-white btn-primary" id="hero-donate-btn">Donate Now</a>
     </div>
+    <div style="position:absolute;width:100%;height:100%;background:rgba(10,20,60,0.45);z-index:1;"></div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section-padding hidden">
     <div class="container text-center">
       <h2 class="Semi">About Us</h2>
+
       <p class="lead">
         We are more than an organization—we are a movement for equitable, compassionate healthcare.
 
@@ -143,80 +142,13 @@ Together, we rise.
     </div>
   </div>
 </section>
-<!-- Our Torch / Impact Section -->
-<section id="Impact" class="section-padding bg-light">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-5 Semi">People We've Helped</h2>
-    <div class="row g-4 justify-content-center">
-      <!-- Pregnant Women -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm text-center">
-          <img src="Images/1.jpg" class="card-img-top" alt="Pregnant Women" style="height:200px;object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Pregnant Women</h5>
-            <p class="card-text text-muted">We provide prenatal care, safe delivery kits, and maternal health education to expectant mothers in need.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Food Giving -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm text-center">
-          <img src="Images/2.jpg" class="card-img-top" alt="Food Giving" style="height:200px;object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Food Distribution</h5>
-            <p class="card-text text-muted">We organize food drives and distribute nutritious meals to families facing hunger and malnutrition.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Children Vaccination -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm text-center">
-          <img src="Images/3.jpg" class="card-img-top" alt="Children Vaccination" style="height:200px;object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Children Vaccination</h5>
-            <p class="card-text text-muted">We ensure children receive life-saving vaccines and health checks, protecting them from preventable diseases.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Emergency Aid -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm text-center">
-          <img src="Images/4.jpg" class="card-img-top" alt="Emergency Aid" style="height:200px;object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Emergency Aid</h5>
-            <p class="card-text text-muted">Rapid response with medical supplies, shelter, and support for families affected by disasters or crises.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Orphan Support -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm text-center">
-          <img src="Images/5.jpg" class="card-img-top" alt="Orphan Support" style="height:200px;object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Orphan Support</h5>
-            <p class="card-text text-muted">We care for orphans by providing healthcare, education, and emotional support for a brighter future.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Elderly Care -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm text-center">
-          <img src="Images/6.jpg" class="card-img-top" alt="Elderly Care" style="height:200px;object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Elderly Care</h5>
-            <p class="card-text text-muted">We support the elderly with regular health checkups, medicines, and companionship programs.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- Join Us Form Section -->
 <section id="join-us" class="py-5 hidden">
   <div class="container">
     <h2 class="text-center fw-bold  mb-4 Semi">Join Our Health Mission</h2>
     <p class="text-center text-muted mb-4">Be a participle of our program</p>
-    <form method="POST" class="mx-auto" style="max-width: 600px;">
+    <form method="POST" onsubmit="return showJoinConfirmation(event)" class="mx-auto" style="max-width: 600px;">
       <div class="mb-3">
         <label for="fullName" class="form-label">Full Name</label>
         <input type="text" name="name" class="form-control" id="fullName" required >
@@ -228,12 +160,6 @@ Together, we rise.
       <div class="mb-3">
         <label for="phoneNumber" class="form-label">Phone Number</label>
         <input type="number" name="phone" class="form-control" id="phoneNumber" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Tell us your mind</label>
-         <div class="mb-3">
-          <textarea class="form-control" id="message" required></textarea>
-        </div>
       </div>
       <div class="d-grid">
         <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
@@ -252,7 +178,7 @@ Together, we rise.
   <!-- talk to us -->
    <section id="Join" class="py-5">
     <div class="container">
-      <h2 class="text-center fw-bold mb-4 Join Semi">Talk to us</h2>
+      <h2 class="text-center fw-bold mb-4 Join Semi">Your message</h2>
       <form class="mx-auto" style="max-width: 600px;">
         <div class="mb-5">
           <input type="text" class="form-control" id="name" placeholder="Name" required>
@@ -268,49 +194,45 @@ Together, we rise.
     </div>
   </section>
    <!-- Testimonal Section -->
-  <section id="Testimonal" class="section-padding ">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-5 Semi">What People Say</h2>
-      <div class="row justify-content-center">
-        <!-- Testimonial 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm text-center p-3">
+  <section id="Testimonal" class="section-padding">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5 Semi">What People Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
             <img src="Images/3.jpg" class="rounded-circle mx-auto mb-3" alt="Person 1" style="width:90px;height:90px;object-fit:cover;">
             <h5 class="mb-1">Amina Yusuf</h5>
             <p class="text-muted small mb-2">Beneficiary</p>
             <p class="card-text"><em>“MedHope Foundation gave my family hope when we had nowhere else to turn. Their kindness and care changed our lives.</em>”</p>
           </div>
         </div>
-        <!-- Testimonial 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm text-center p-3">
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
             <img src="./Images/pics 2.jpg" class="rounded-circle mx-auto mb-3" alt="Person 2" style="width:90px;height:90px;object-fit:cover;">
             <h5 class="mb-1">Samuel Okoro</h5>
             <p class="text-muted small mb-2">Volunteer</p>
             <p class="card-text"><em>“Volunteering here has been the most rewarding experience. I’ve seen real change and real smiles.”</em></p>
           </div>
         </div>
-        <!-- Testimonial 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm text-center p-3">
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
             <img src="Images/5.jpg" class="rounded-circle mx-auto mb-3" alt="Person 3" style="width:90px;height:90px;object-fit:cover;">
             <h5 class="mb-1">Ngozi Eze</h5>
             <p class="text-muted small mb-2">Mother</p>
             <p class="card-text"><em>“The free clinics and medicines helped my children recover quickly. Thank you for caring for our community.”</em></p>
           </div>
         </div>
-        <!-- Testimonial 4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm text-center p-3">
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
             <img src="./Images/pic10.jpg" class="rounded-circle mx-auto mb-3" alt="Person 4" style="width:90px;height:90px;object-fit:cover;">
             <h5 class="mb-1">Fatima Bello</h5>
             <p class="text-muted small mb-2">Student</p>
             <p class="card-text">“I learned so much about health and hygiene from their outreach. Now I teach my friends too!”</p>
           </div>
         </div>
-        <!-- Testimonial 5 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm text-center p-3">
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
             <img src="./Images/pics.jpg" class="rounded-circle mx-auto mb-3" alt="Person 5" style="width:90px;height:90px;object-fit:cover;">
             <h5 class="mb-1">Chinedu Umeh</h5>
             <p class="text-muted small mb-2">Community Leader</p>
@@ -318,8 +240,17 @@ Together, we rise.
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Contact Section (Standard, No Form) -->
   <section id="contact" class="section-padding bg-secondary">
@@ -330,15 +261,15 @@ Together, we rise.
           <p class="fs-5 mb-3">We’re here to help and answer any question you might have. Reach out to us through any of the following ways:</p>
           <ul class="list-unstyled fs-5 mb-4">
             <li class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> <a href="mailto:info@MedHopeFoundation.org" class="text-primary">info@MedHopeFoundation.org</a></li>
-            <li class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> <a href="tel:+1234567890" class="text-primary">+1 234 567 890</a></li>
-            <li class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Address:</strong> 123 MedHope Street, City, Country</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> <a href="tel:+1234567890" class="text-primary">+234 90 567 890</a></li>
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Address:</strong> 23 Adeola, Lekki, Lagos-State, Nigeria</li>
           </ul>
           <div class="d-flex gap-3 mt-2">
-            <a href="#" class="bi bi-facebook fs-3 text-primary" title="Facebook"></a>
-            <a href="#" class="bi bi-instagram fs-3 text-primary" title="Instagram"></a>
-            <a href="#" class="bi bi-whatsapp fs-3 text-primary" title="WhatsApp"></a>
-            <a href="#" class="bi bi-x fs-3 text-primary" title="X"></a>
-            <a href="#" class="bi bi-tiktok fs-3 text-primary" title="TikTok"></a>
+            <a href="https://facebook.com" class="bi bi-facebook fs-3 text-primary" title="Facebook" target="_blank" rel="noopener"></a>
+            <a href="https://instagram.com" class="bi bi-instagram fs-3 text-primary" title="Instagram" target="_blank" rel="noopener"></a>
+            <a href="https://wa.me" class="bi bi-whatsapp fs-3 text-primary" title="WhatsApp" target="_blank" rel="noopener"></a>
+            <a href="https://twitter.com" class="bi bi-twitter-x fs-3 text-primary" title="X (Twitter)" target="_blank" rel="noopener"></a>
+            <a href="https://tiktok.com" class="bi bi-tiktok fs-3 text-primary" title="TikTok" target="_blank" rel="noopener"></a>
           </div>
         </div>
         <div class="col-lg-6 text-center">
