@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedHope Foundation</title>
+  <!-- Framework css-->
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <!-- styling css -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Responsive css -->
+  <link rel="stylesheet" href="./Responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- ######################################icon links############################################### -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="light-theme">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#Hero">MedHope Foundation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#join-us">Join us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Join">Your message</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Testimonal">Testimonal</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn ms-lg-4 mt-2 mt-lg-0 text-dark bg-primary" href="#donate">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <button id="theme-toggle" class="btn btn-outline-secondary btn-toggle ms-2 mt-2 mt-lg-0">🌙</button>
+  <!-- Hero Section -->
+  <section id="Hero" class="hero d-flex align-items-center text-center w-100" style="min-height: 100vh; background-image: url('./Images/2.jpg'); background-size: cover; background-position: center; position: relative;">
+    <div class="container text-white position-relative" style="z-index:2;">
+      <h1 class="display-4 fw-bold text-center">"Bring Comfort. Share Care. Change a Life."</h1>
+      <p class="lead">With your help, we can reach those in pain with healing hands and hopeful hearts.</p>
+      <a href="#donate" class="btn text-center text-white btn-primary" id="hero-donate-btn">Donate Now</a>
+    </div>
+    <div style="position:absolute;width:100%;height:100%;background:rgba(10,20,60,0.45);z-index:1;"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding hidden">
+    <div class="container text-center">
+      <h2 class="Semi">About Us</h2>
+
+      <p class="lead">
+        We are more than an organization—we are a movement for equitable, compassionate healthcare.
+
+Born from the belief that every life deserves access to quality medical care, our NGO is dedicated to reaching communities where healthcare is limited, overlooked, or out of reach. We exist not for profit, but for people—for their dignity, their healing, and their future.
+
+Our mission is simple yet urgent: to bridge the gap between medical need and medical access. Whether it's rural outreach, emergency response, chronic care management, or health education, we work hand-in-hand with local communities to provide care that is not only effective, but also respectful and human-centered.
+
+Guided by empathy and powered by a team of devoted healthcare professionals and volunteers, we bring both expertise and heart to every patient interaction. We believe that healing begins with listening, continues with treatment, and grows with trust.
+
+Health is a right, not a privilege. And until that truth becomes a reality for all, we will not stop.
+
+Together, we care.
+Together, we heal.
+Together, we rise.
+</p>
+    </div>
+  </section>
+
+  <!-- #########Services######### -->
+   <section id="Services" class="py-5 hidden" >
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4 Semi">Our Core Services</h2>
+    <div class="row g-4">
+      <!-- Community Clinics -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="bi bi-hospital fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Community Clinics</h5>
+            <p class="card-text text-muted">Mobile and local clinics providing checkups, treatments, vaccinations, and follow-ups in underserved areas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outreach Programs -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="bi bi-people-fill fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Outreach Programs</h5>
+            <p class="card-text text-muted">We host awareness events on hygiene, maternal health, HIV prevention, nutrition, and other critical topics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Health Supplies -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="bi bi-bandaid-fill fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Health Supplies</h5>
+            <p class="card-text text-muted">Free distribution of medical kits, essential drugs, face masks, and maternity packs to families in need.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mental Health Support -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="bi bi-emoji-smile-fill fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Mental Health Support</h5>
+            <p class="card-text text-muted">Counseling, awareness, and peer support groups for depression, trauma, and emotional resilience.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training & Capacity Building -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="bi bi-mortarboard-fill fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Training & Capacity Building</h5>
+            <p class="card-text text-muted">We train local health workers, volunteers, and educators on first aid, disease detection, and response.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Water & Sanitation -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <i class="bi bi-droplet-fill fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Water & Sanitation</h5>
+            <p class="card-text text-muted">We promote access to clean water, handwashing, and safe sanitation through infrastructure and education.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Join Us Form Section -->
+<section id="join-us" class="py-5 hidden">
+  <div class="container">
+    <h2 class="text-center fw-bold  mb-4 Semi">Join Our Health Mission</h2>
+    <p class="text-center text-muted mb-4">Be a participle of our program</p>
+    <form method="POST" onsubmit="return showJoinConfirmation(event)" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" name="name" class="form-control" id="fullName" required >
+      </div>
+      <div class="mb-3">
+        <label for="emailAddress" class="form-label">Email Address</label>
+        <input type="email" name="email" class="form-control" id="emailAddress" required>
+      </div>
+      <div class="mb-3">
+        <label for="phoneNumber" class="form-label">Phone Number</label>
+        <input type="number" name="phone" class="form-control" id="phoneNumber" required>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+      </div>
+    </form>
+  </div>
+</section>
+  <!-- Call to Action -->
+  <section id="donate" class="hidden section-padding text-center text-white bg-primary">
+    <div class="container">
+      <h2 class="mb-3 Semi">Your Support Can Change Lives</h2>
+      <p class="lead mb-4">Every donation helps us reach more people in need.</p>
+      <a href="#" class="btn btn-dark btn-lg">Donate Today</a>
+    </div>
+  </section>
+  <!-- talk to us -->
+   <section id="Join" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 Join Semi">Your message</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-5">
+          <input type="text" class="form-control" id="name" placeholder="Name" required>
+        </div>
+        <div class="mb-5">
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <div class="mb-5">
+          <textarea class="form-control" id="message" rows="6" placeholder="What you want us" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+   <!-- Testimonal Section -->
+  <section id="Testimonal" class="section-padding">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5 Semi">What People Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
+            <img src="Images/3.jpg" class="rounded-circle mx-auto mb-3" alt="Person 1" style="width:90px;height:90px;object-fit:cover;">
+            <h5 class="mb-1">Amina Yusuf</h5>
+            <p class="text-muted small mb-2">Beneficiary</p>
+            <p class="card-text"><em>“MedHope Foundation gave my family hope when we had nowhere else to turn. Their kindness and care changed our lives.</em>”</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
+            <img src="./Images/pics 2.jpg" class="rounded-circle mx-auto mb-3" alt="Person 2" style="width:90px;height:90px;object-fit:cover;">
+            <h5 class="mb-1">Samuel Okoro</h5>
+            <p class="text-muted small mb-2">Volunteer</p>
+            <p class="card-text"><em>“Volunteering here has been the most rewarding experience. I’ve seen real change and real smiles.”</em></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
+            <img src="Images/5.jpg" class="rounded-circle mx-auto mb-3" alt="Person 3" style="width:90px;height:90px;object-fit:cover;">
+            <h5 class="mb-1">Ngozi Eze</h5>
+            <p class="text-muted small mb-2">Mother</p>
+            <p class="card-text"><em>“The free clinics and medicines helped my children recover quickly. Thank you for caring for our community.”</em></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
+            <img src="./Images/pic10.jpg" class="rounded-circle mx-auto mb-3" alt="Person 4" style="width:90px;height:90px;object-fit:cover;">
+            <h5 class="mb-1">Fatima Bello</h5>
+            <p class="text-muted small mb-2">Student</p>
+            <p class="card-text">“I learned so much about health and hygiene from their outreach. Now I teach my friends too!”</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card h-100 shadow-sm text-center p-3 mx-auto" style="max-width: 400px;">
+            <img src="./Images/pics.jpg" class="rounded-circle mx-auto mb-3" alt="Person 5" style="width:90px;height:90px;object-fit:cover;">
+            <h5 class="mb-1">Chinedu Umeh</h5>
+            <p class="text-muted small mb-2">Community Leader</p>
+            <p class="card-text">“Their support brought our village together. We are healthier and happier because of MedHope.”</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section (Standard, No Form) -->
+  <section id="contact" class="section-padding bg-secondary">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="Semi mb-4">Contact Us</h2>
+          <p class="fs-5 mb-3">We’re here to help and answer any question you might have. Reach out to us through any of the following ways:</p>
+          <ul class="list-unstyled fs-5 mb-4">
+            <li class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> <a href="mailto:info@MedHopeFoundation.org" class="text-primary">info@MedHopeFoundation.org</a></li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> <a href="tel:+1234567890" class="text-primary">+234 90 567 890</a></li>
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Address:</strong> 23 Adeola, Lekki, Lagos-State, Nigeria</li>
+          </ul>
+          <div class="d-flex gap-3 mt-2">
+            <a href="https://facebook.com" class="bi bi-facebook fs-3 text-primary" title="Facebook" target="_blank" rel="noopener"></a>
+            <a href="https://instagram.com" class="bi bi-instagram fs-3 text-primary" title="Instagram" target="_blank" rel="noopener"></a>
+            <a href="https://wa.me" class="bi bi-whatsapp fs-3 text-primary" title="WhatsApp" target="_blank" rel="noopener"></a>
+            <a href="https://twitter.com" class="bi bi-twitter-x fs-3 text-primary" title="X (Twitter)" target="_blank" rel="noopener"></a>
+            <a href="https://tiktok.com" class="bi bi-tiktok fs-3 text-primary" title="TikTok" target="_blank" rel="noopener"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="./Logo/empowerment-logo-correct-e1505331240380-300x186.png" alt="MedHope Foundation Logo" class="img-fluid rounded shadow" style="max-width: 350px; background: #fff; padding: 16px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaborations Carousel Section -->
+  <section id="collaborations" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="Semi text-center mb-5">Our Collaborations</h2>
+      <div id="collabCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="Logo/AHF_Logo.jpeg" class="d-inline-block mx-auto" alt="AHF Logo" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/empowerment-logo-correct-e1505331240380-300x186.png" class="d-inline-block mx-auto" alt="Empowerment Logo" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/federal_allied.jpeg" class="d-inline-block mx-auto" alt="Federal Allied" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/federal_medical_centre_bida.png" class="d-inline-block mx-auto" alt="Federal Medical Centre Bida" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/federal_university_of_health_sciences.jpeg" class="d-inline-block mx-auto" alt="Federal University of Health Sciences" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/health_emergency_initiative.png" class="d-inline-block mx-auto" alt="Health Emergency Initiative" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/institute_of_human_virology.jpeg" class="d-inline-block mx-auto" alt="Institute of Human Virology" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/jigawa_school_of_midwifery.jpg" class="d-inline-block mx-auto" alt="Jigawa School of Midwifery" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/johns-hopkins-uni-affiliate.png" class="d-inline-block mx-auto" alt="Johns Hopkins Affiliate" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/mabeloboh_center.jpeg" class="d-inline-block mx-auto" alt="Mabeloboh Center" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/mart_life_clic.jpeg" class="d-inline-block mx-auto" alt="Mart Life Clinic" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/ministry_of_health.jpeg" class="d-inline-block mx-auto" alt="Ministry of Health" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/nigeria_center_for_disease_control.jpeg" class="d-inline-block mx-auto" alt="Nigeria Center for Disease Control" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/nigeria_health_code commitee.jpeg" class="d-inline-block mx-auto" alt="Nigeria Health Code Committee" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/onelife_initiative.jpeg" class="d-inline-block mx-auto" alt="Onelife Initiative" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/pharmarcy_council.jpeg" class="d-inline-block mx-auto" alt="Pharmacy Council" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/society_for_family_health.jpeg" class="d-inline-block mx-auto" alt="Society for Family Health" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/trauma_care.jpeg" class="d-inline-block mx-auto" alt="Trauma Care" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="Logo/Vicar_Hope_Foundation_Logo.jpg" class="d-inline-block mx-auto" alt="Vicar Hope Foundation" style="height:120px; max-width:220px; object-fit:contain;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#collabCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#collabCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 hidden">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 MedHope Foundation. All rights reserved.</p>
+    </div>
+  </footer>
+    <!-- functionality javascript -->
+  <script src="function.js"></script>
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
