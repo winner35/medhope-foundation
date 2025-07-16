@@ -1,3 +1,24 @@
+/* Make navbar background cover full height when expanded on mobile (moved from style.css) */
+@media (max-width: 991.98px) {
+  nav.navbar {
+    min-height: 64px;
+  }
+  .navbar-collapse {
+    background-color: #034406 !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    padding-bottom: 1.5rem;
+    border-radius: 0 0 18px 18px;
+  }
+  body.dark-theme .navbar-collapse {
+    background-color: #000 !important;
+  }
+  .btn-toggle {
+    position: relative;
+    float: right;
+    margin-right: 1rem;
+    z-index: 2;
+  }
+}
 /* Responsive styles for MedHope Foundation */
 @media (max-width: 767.98px) {
   .hero {

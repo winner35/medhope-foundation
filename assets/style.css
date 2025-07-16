@@ -42,26 +42,17 @@
     .light-theme .lead {
       color: #18c213;
     }
-
-    /* Hero-header theme styles */
-    .light-theme .Hero-header {
-      color: rgba(255,255,255,0.85);
-    }
-    .dark-theme .Hero-header {
-      color: rgba(255, 255, 255, 0.85);
-    }
      .btn-toggle {
-      position: fixed;
-      padding: 10px 15px;
+      position:fixed;
       text-decoration: none;
     }
-/* ===========NAVBAR START======== */
     .navbar-brand {
       font-size: 3rem;
       font-weight: 40%;
       color: #08fa28 !important;
       letter-spacing: 1px;
     }
+
 
     .nav-link {
       color:rgb(83, 189, 83) !important;
