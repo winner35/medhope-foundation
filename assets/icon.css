@@ -1,0 +1,24 @@
+
+    /* ===========ICON COLOR THEMING=========== */
+body.light-theme [class^="bi-"]:not(.contact-social-facebook):not(.contact-social-instagram):not(.contact-social-whatsapp):not(.contact-social-twitter):not(.contact-social-tiktok),
+body.light-theme [class*=" bi-"]:not(.contact-social-facebook):not(.contact-social-instagram):not(.contact-social-whatsapp):not(.contact-social-twitter):not(.contact-social-tiktok) {
+  color: #0ec42c !important;
+  transition: color 0.3s;
+}
+body.dark-theme [class^="bi-"]:not(.contact-social-facebook):not(.contact-social-instagram):not(.contact-social-whatsapp):not(.contact-social-twitter):not(.contact-social-tiktok),
+body.dark-theme [class*=" bi-"]:not(.contact-social-facebook):not(.contact-social-instagram):not(.contact-social-whatsapp):not(.contact-social-twitter):not(.contact-social-tiktok) {
+  color: #29ff4c !important;
+  transition: color 0.3s;
+}
+
+/* Specific icon hover effect for theme */
+body.light-theme .nav-link:hover i,
+body.light-theme .nav-link:hover .bi,
+body.light-theme .nav-link:hover .fi {
+  color: #08330bc5 !important;
+}
+body.dark-theme .nav-link:hover i,
+body.dark-theme .nav-link:hover .bi,
+body.dark-theme .nav-link:hover .fi {
+  color: #16b410 !important;
+}

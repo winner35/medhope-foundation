@@ -1,65 +1,56 @@
-# MedHope Foundation – NGO Responsive Website
 
-A modern, responsive website for MedHope Foundation, a non-profit organization dedicated to providing equitable, compassionate healthcare to underserved communities. This project showcases the foundation's mission, services, impact, testimonials, collaborations, and contact information in a visually appealing and mobile-friendly format.
+# MedHope Foundation Website
+
+This is the official website for the MedHope Foundation, a non-profit organization dedicated to providing equitable, compassionate healthcare to underserved communities.
 
 ## Features
-
-- **Responsive Design:** Fully mobile-friendly layout using Bootstrap 5 and custom CSS.
-- **Hero Section:** Eye-catching hero with background image, overlay, and call-to-action button.
-- **Theme Toggle:** Switch between light and dark modes with a single click.
-- **About Section:** Clear statement of the foundation's mission and values.
-- **Services Section:** Highlights core services such as clinics, outreach, supplies, mental health, training, and sanitation.
-- **Join Us & Contact:** Easy ways for visitors to get involved or reach out, with clear forms and contact details.
-- **Testimonial Section:** Real stories from beneficiaries, volunteers, and community members.
-- **Collaborations Carousel:** Showcases partner organizations and supporters with a fast, auto-sliding carousel.
-- **Modern UI:** Clean, accessible, and visually engaging design with icons and imagery.
+- **Responsive Navigation Bar** with scrollspy highlighting and smooth scrolling
+- **Hero Section** with impactful messaging and call-to-action
+- **About Us** section describing the foundation's mission
+- **Core Services** section outlining key healthcare initiatives
+- **Join Us** form for volunteers and supporters
+- **Feedback/Contact** section for inquiries and messages
+- **Testimonials** carousel from beneficiaries and volunteers
+- **Collaborations** carousel showcasing partner organizations
+- **Theme Toggle** for light/dark mode
+- **Mobile-friendly and accessible design**
 
 ## Technologies Used
+- HTML5, CSS3, JavaScript (Vanilla)
+- [Bootstrap 5](https://getbootstrap.com/) for layout and components
+- Custom CSS for branding and scrollspy highlight
 
-- HTML5
-- CSS3 (with Bootstrap 5)
-- JavaScript (for interactivity, theme toggle, carousel, and scrollspy nav highlight)
-- Bootstrap Icons
+## File Structure
+```
+medhope-foundation/
+├── index.html              # Main website HTML
+├── style.css               # Main custom styles
+├── Responsive.css          # Responsive/mobile styles
+├── function.js             # Main JavaScript for interactivity
+├── bootstrap-5.0.2-dist/   # Bootstrap CSS/JS assets
+├── Images/                 # Site images
+├── Logo/                   # Partner and foundation logos
+└── README.md               # Project documentation (this file)
+```
 
-## Getting Started
-
-1. **Clone or Download the Repository**
-   ```
-   git clone <your-repo-url>
-   ```
-   Or download and extract the ZIP file.
-
-2. **Open the Project**
-   Open the project folder in your code editor or simply open `index.html` in your web browser.
-
-3. **Project Structure**
-   ```
-   /bootstrap-5.0.2-dist/   # Bootstrap CSS & JS
-   /Images/                 # Project images
-   /Logo/                   # Partner and organization logos
-   index.html               # Main website file
-   style.css                # Main styles
-   Responsive.css           # Media queries for responsiveness
-   function.js              # JavaScript for interactivity
-   README.md                # Project documentation
-   ```
+## How to Use
+1. **Clone or Download** this repository.
+2. Open `index.html` in your browser.
+3. All assets are included locally; no build step is required.
 
 ## Customization
-- Replace images and logos in the `Images/` and `Logo/` folders as needed.
-- Update text content in `index.html` to reflect your organization's mission, services, and contact info.
-- Adjust styles in `style.css` and `Responsive.css` for branding or layout changes.
-
-## Deployment
-This project is static and can be hosted on any web server or static site service (e.g., GitHub Pages, Netlify, Vercel).
+- Update content in `index.html` to reflect your organization's information.
+- Add or replace images in the `Images/` and `Logo/` folders.
+- Adjust styles in `style.css` and `Responsive.css` as needed.
+- Edit `function.js` to modify or extend interactivity.
 
 ## Credits
-- [Bootstrap](https://getbootstrap.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- All images and logos are property of their respective owners.
+- Bootstrap 5 for UI components
+- Bootstrap Icons and Flaticon for icons
+- All images and logos are property of their respective owners or used with permission.
 
 ## License
-This project is for demonstration and educational purposes. For production or commercial use, please ensure you have rights to all images and content.
+This project is for non-profit and educational use. For commercial use or redistribution, please contact the MedHope Foundation.
 
 ---
-
-**MedHope Foundation – Together, we care. Together, we heal. Together, we rise.**
+For questions or support, contact: info@MedHopeFoundation.org

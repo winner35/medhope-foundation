@@ -1,0 +1,65 @@
+/* Responsive styles for MedHope Foundation */
+@media (max-width: 767.98px) {
+  .hero {
+    padding: 3rem 0 2rem 0;
+    min-height: 40vh;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+  .Semi {
+    font-size: 1.5rem;
+  }
+  .card-img-top {
+    height: 120px;
+  }
+  .section-padding {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 2rem 0 1rem 0;
+  }
+  .content {
+    padding: 0 1rem;
+  }
+}
+
+/* Responsive navbar styles */
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    border-radius: 0 0 12px 12px;
+    margin-top: 0.5rem;
+    padding: 1rem 1.5rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .navbar .btn {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+  }
+  .navbar .nav-link {
+    padding: 0.75rem 0;
+    width: 100%;
+    color: #f8f9fa !important; /* Make nav-link text light */
+    transition: color 0.3s;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-link:active,
+  .navbar .nav-link:focus {
+    color: #f9fffd !important; /* Even lighter text color on hover */
+    background: none;
+    transition: color 0.2s;
+  }
+  .custom-toggler {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    z-index: 1051;
+  }
+}

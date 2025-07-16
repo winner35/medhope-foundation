@@ -1,0 +1,483 @@
+/* style.css - Main stylesheet for MedHope Foundation
+   Contains custom styles for layout, typography, colors, and responsive design.
+   Sections include: navigation, hero, about, services, join form, testimonials, contact, collaborations, and footer.
+   Bootstrap is used for base styling; this file overrides and extends Bootstrap styles. */
+
+/* Importing Google font - Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+*{
+  margin: 0%;
+  padding: 0%;
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  box-sizing: border-box;
+}
+/* Dark and white color theme begins */
+ body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+      .light-theme body{
+      background-color: #ffffff;
+      color: #000000
+    }
+    .dark-theme {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    .dark-theme body{
+      color: white;
+      background-color: #413e3e;
+    }
+    .dark-theme .navbar,
+    .dark-theme .card{
+      background-color: #1e1e1e;
+      color: white;
+    }
+    .dark-theme .lead {
+      color: #e0ffe0;
+    }
+    .light-theme .lead {
+      color: #18c213;
+    }
+
+    /* Hero-header theme styles */
+    .light-theme .Hero-header {
+      color: rgba(255,255,255,0.85);
+    }
+    .dark-theme .Hero-header {
+      color: rgba(255, 255, 255, 0.85);
+    }
+     .btn-toggle {
+      position: fixed;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+/* ===========NAVBAR START======== */
+    .navbar-brand {
+      font-size: 3rem;
+      font-weight: 40%;
+      color: #08fa28 !important;
+      letter-spacing: 1px;
+    }
+
+    .nav-link {
+      color:rgb(83, 189, 83) !important;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Hamburger Icon Custom Animation */
+    .custom-toggler {
+      border: none;
+      background: none;
+      outline: none;
+      width: 30px;
+      height: 24px;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .custom-toggler span {
+      display: block;
+      height: 3px;
+      background: #fff;
+      border-radius: 3px;
+      margin: 5px 0;
+      transition: 0.3s ease-in-out;
+    }
+
+    .custom-toggler.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .custom-toggler.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .custom-toggler.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+.nav-link::before,
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #539e5d, #053d0e);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.nav-link::before {
+  top: 0;
+  transform: translateY(-6px);
+}
+.nav-link::after {
+  bottom: 0;
+  transform: translateY(6px);
+}
+.nav-link:hover::before, .nav-link:hover::after {
+  color: #13a70e;
+}
+.nav-link:hover::before, .nav-link:hover::after,
+.nav-link:focus::before, .nav-link:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+  color: #189e23;
+}
+.nav-link.active::before,
+.nav-link.active::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+    
+/* ========== THEME: NAVBAR DARK/LIGHT MODE SUPPORT ========== */
+nav.navbar {
+  color: #0c5209;
+  background-color: #1a1717;
+  transition: background-color 0.4s, color 0.4s, top 0.4s, box-shadow 0.3s;
+}
+body.light-theme nav.navbar {
+  background-color: #034406 !important;
+  color: #236b20 !important;
+}
+body.dark-theme nav.navbar {
+  background-color: #000000 !important;
+  color: #236b20 !important;
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+  color: #0ec42c !important;
+  transition: color 0.4s;
+}
+body.dark-theme nav.navbar .nav-link .navigation-bar {
+  color: #ffffff!important;
+}
+body.dark-theme nav.navbar .nav-link:hover{
+  color: #62ff77 !important;
+  padding-left: 15pt;
+}
+body.light-theme nav.navbar .nav-link:hover {
+  color: #22c40d !important; 
+  padding-left: 15pt;
+}
+/* ==============NAVBAR END==================== */
+
+.btn{
+  background-color: #10bd1e;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+}
+/* ========== BUTTONS DARK THEME/LIGHT THEME ========== */
+body.dark-theme .btn:hover,
+body.dark-theme a.btn:hover {
+  color: #11f30a !important;
+  background-color: #232823 !important; /* Lighter dark background for visibility */
+  transform: scale(1.07) rotate(-2.5deg);
+  transition: color 0.2s, background-color 0.2s, transform 0.25s cubic-bezier(.68,-0.55,.27,1.55);
+}
+body.light-theme .btn:hover,
+body.light-theme a.btn:hover {
+  color: #072906 !important;
+  background-color: #eafbe2 !important; /* Light green background for visibility */
+  transform: scale(1.07) rotate(2.5deg);
+  transition: color 0.2s, background-color 0.2s, transform 0.25s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+   /* ===========SEMI============= */
+   .Semi{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300px;
+    font-size: 60px;
+    text-align: center;
+    color: #0cc524;
+   }
+    
+
+     /* ==============HERO============ */
+     /* ================SLIDE IMAGES==========================  */
+     .hero{
+      background-size: cover; 
+      background-position: center;
+       position: relative;
+       padding-top: 250px;
+       width: 100%;
+       height: 100%;
+     }
+
+     .Hero-header{
+      text-align: center;
+      padding-bottom: 100px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     }
+     .Hero-header h1{
+       font-size: 5rem;
+      font-weight: 100%;
+      color: #0fb117;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .Hero-header p{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 2rem;
+      color: #07a70f;
+     }
+     .Hero-header a{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-decoration: none;
+      background-color: #08fa28;
+      text-align: center;
+      display: inline-block;
+     }
+
+    /* ======================JOIN-US SECTION=========================== */
+    #join-us input {
+      border:0.3px solid #000000;
+      background-color:white;
+    }
+    #join-us #message {
+      border: 1px solid #000000;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000;
+      padding: 10px;
+      transition: border-color 0.3s;
+    }
+    #join-us #message:focus {
+      border-color: #0cc524;
+      color: #074b05;
+      outline: none;
+      border: none;
+    }
+    #message{
+      border: 0.3px solid #000000;
+      color: #000000;
+    }
+    #Join input textarea::placeholder{
+      font-size: 100px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: normal;
+    } 
+     #Join input :hover{
+      border-color: black;
+      background-color: aliceblue;
+     }
+
+
+     /* =============TALK TO US============ */
+      #Join input {
+      border: 1px solid #000000;
+      background-color:rgb(254, 253, 255);
+    }
+    #message{
+      border: 1px solid #000000;
+      background-color:rgb(252, 249, 255);
+    }
+    #Join input textarea::placeholder{
+      font-size: 100px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: normal;
+    } 
+     #Join input :hover{
+      border-color: #0cc524;
+      background-color: aliceblue;
+     }
+     /*===============CONTACT US================ */
+     .Contact li{
+      font-size: 40px;
+      color: #0cc524;
+      align-self: center;
+      justify-items: center;
+      margin-right: 10px;
+      padding-left: 100px;
+     }
+      .Contact li:hover{
+        color: #020202;
+        cursor: pointer; 
+      }
+      .social{
+        color: #0cc524;
+        font-size: 35px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      /*================CONTACT SECTION================ */
+.dark-theme .contact-form {
+  background-color: #181b24;
+  color: #f0f0f0;
+}
+.dark-theme .contact-form input,
+.dark-theme .contact-form textarea {
+  background-color: #23263a00; /* transparent background */
+  color: #f0f0f0;
+  border: 1px solid #0cc524;
+}
+.dark-theme .contact-form input::placeholder,
+.dark-theme .contact-form textarea::placeholder {
+  color: #b0b8d1;
+  opacity: 1;
+}
+.dark-theme .contact-form label {
+  color: #b0b8d1;
+}
+.contact-form label {
+  font-weight: 600;
+  color:green;
+}
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+}
+
+/* ==============CUSTOM JOIN POPUP================ */
+#custom-join-popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#custom-join-popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+#custom-join-popup .popup-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+#custom-join-popup .popup-content {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  color: #222;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+  animation: popup-bounce-in 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+#custom-join-popup .popup-message {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+#custom-join-popup .popup-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 1.2rem;
+  font-size: 2rem;
+  color:green;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: color 0.2s;
+}
+#custom-join-popup .popup-close:hover, #custom-join-popup .popup-close:focus {
+  color:green;
+}
+@keyframes popup-bounce-in {
+  0% { transform: scale(0.7); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  80% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+
+
+/*=====================COLLABORATIONS SECTION============================== */
+.collaborations-bg {
+  background-color: #f8f9fa; /* Light background for light theme */
+  transition: background-color 0.3s;
+}
+body.dark-theme .collaborations-bg {
+  background-color: #181b24 !important; /* Dark background for dark theme */
+}
+
+/* ========== SOCIAL MEDIA ICONS: STANDARD WEB LOOK ========== */
+.contact-social-facebook,
+.contact-social-instagram,
+.contact-social-whatsapp,
+.contact-social-twitter,
+.contact-social-tiktok {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #fff !important;
+  font-size: 1.7rem;
+  margin: 0 8px 8px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  text-decoration: none !important;
+  vertical-align: middle;
+  line-height: 1;
+  /* Fix for Facebook icon vertical alignment */
+  padding-top: 2px;
+}
+
+/* Center the social icons container */
+.contact-social-icons, .contact-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 auto 16px auto;
+  padding: 0;
+}
+
+.contact-social-facebook { background: #1877f3 !important; }
+.contact-social-instagram { background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important; }
+.contact-social-whatsapp { background: #25d366 !important; }
+.contact-social-twitter { 
+  background: #000000 !important; 
+}
+.contact-social-tiktok { background: #000000 !important; }
+
+.contact-social-facebook:hover,
+.contact-social-instagram:hover,
+.contact-social-whatsapp:hover,
+.contact-social-twitter:hover,
+.contact-social-tiktok:hover {
+  transform: scale(1.12) rotate(-3deg);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  filter: brightness(1.08);
+  text-decoration: none !important;
+}
+
+/* Ensure social icons are not affected by theme icon color */
+body.light-theme .contact-social-facebook,
+body.light-theme .contact-social-instagram,
+body.light-theme .contact-social-whatsapp,
+body.light-theme .contact-social-twitter,
+body.light-theme .contact-social-tiktok,
+body.dark-theme .contact-social-facebook,
+body.dark-theme .contact-social-instagram,
+body.dark-theme .contact-social-whatsapp,
+body.dark-theme .contact-social-twitter,
+body.dark-theme .contact-social-tiktok {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
