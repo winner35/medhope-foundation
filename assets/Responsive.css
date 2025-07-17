@@ -1,4 +1,50 @@
-/* Make navbar background cover full height when expanded on mobile (moved from style.css) */
+/*============= Responsive navbar for smaller devices ============*/
+.navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    border-radius: 0 0 12px 12px;
+    margin-top: 0.5rem;
+    padding: 1rem 1.5rem;
+  }
+   .navbar .nav-link {
+    padding: 0.75rem 0;
+    width: 100%;
+    transition: color 0.3s;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-link:active,
+  .navbar .nav-link:focus {
+    background: none;
+    transition: color 0.2s;
+  }
+  .navbar .btn {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+  }
+  .custom-toggler {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    z-index: 1051;
+  }
+}
+
+/*========== Make navbar background cover full height when expanded on mobile (moved from style.css) =============*/
 @media (max-width: 991.98px) {
   nav.navbar {
     min-height: 64px;
@@ -10,7 +56,7 @@
     border-radius: 0 0 18px 18px;
   }
   body.dark-theme .navbar-collapse {
-    background-color: #000 !important;
+    background-color: hsl(0, 0%, 6%) !important;
   }
   .btn-toggle {
     position: relative;
@@ -19,7 +65,7 @@
     z-index: 2;
   }
 }
-/* Responsive styles for MedHope Foundation */
+/* ===========RESPONSIVE STYLE FOR MEDHOPE FOUNDATION=============== */
 @media (max-width: 767.98px) {
   .hero {
     padding: 3rem 0 2rem 0;
@@ -29,7 +75,7 @@
     font-size: 2rem;
   }
   .Semi {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .card-img-top {
     height: 120px;
@@ -47,40 +93,3 @@
   }
 }
 
-/* Responsive navbar styles */
-@media (max-width: 991.98px) {
-  .navbar .navbar-collapse {
-    border-radius: 0 0 12px 12px;
-    margin-top: 0.5rem;
-    padding: 1rem 1.5rem;
-  }
-  .navbar-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  .navbar .btn {
-    width: 100%;
-    margin: 0.5rem 0 0 0;
-    text-align: center;
-  }
-  .navbar .nav-link {
-    padding: 0.75rem 0;
-    width: 100%;
-    color: #f8f9fa !important; /* Make nav-link text light */
-    transition: color 0.3s;
-  }
-  .navbar .nav-link:hover,
-  .navbar .nav-link:active,
-  .navbar .nav-link:focus {
-    color: #f9fffd !important; /* Even lighter text color on hover */
-    background: none;
-    transition: color 0.2s;
-  }
-  .custom-toggler {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.2rem;
-    z-index: 1051;
-  }
-}

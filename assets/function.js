@@ -1,32 +1,8 @@
 // function.js - Main JavaScript for MedHope Foundation
 // Handles interactivity: theme toggling, form submission, section reveal, and Bootstrap component initialization.
 
-const toggleBtn = document.getElementById("theme-toggle");
-    const body = document.body;
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) body.className = savedTheme;
 
-    // Set initial button icon based on theme
-    if (body.classList.contains("dark-theme")) {
-      toggleBtn.textContent = "🔆"; // Sun for dark mode (switch to light)
-    } else {
-      toggleBtn.textContent = "🌙"; // Moon for light mode (switch to dark)
-    }
-
-    toggleBtn.addEventListener("click", () => {
-      body.classList.toggle("dark-theme");
-      body.classList.toggle("light-theme");
-      const currentTheme = body.classList.contains("dark-theme") ? "dark-theme" : "light-theme";
-      localStorage.setItem("theme", currentTheme);
-      // Toggle button icon
-      if (body.classList.contains("dark-theme")) {
-        toggleBtn.textContent = "🔆"; // Sun for dark mode (switch to light)
-      } else {
-        toggleBtn.textContent = "🌙"; // Moon for light mode (switch to dark)
-      }
-    });
-    
-    // Navbar shadow on scroll
+ // Navbar shadow on scroll
     const navbar = document.getElementById("mainNavbar");
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
@@ -86,16 +62,53 @@ const toggleBtn = document.getElementById("theme-toggle");
       window.addEventListener('scroll', onScroll);
       onScroll();
     });
-     // Make sure the carousel auto-slides every 1.5 seconds
-  var collabCarousel = document.getElementById('collabCarousel');
-  if (collabCarousel) {
-    var carousel = new bootstrap.Carousel(collabCarousel, {
-      interval:1500,
-      ride: 'carousel',
-      pause: false,
-      wrap: true
+     // Smooth scroll for Donate Now button
+  var donateBtn = document.getElementById('hero-donate-btn');
+  var donateSection = document.getElementById('donate');
+  if (donateBtn && donateSection) {
+    donateBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      donateSection.scrollIntoView({ behavior: 'smooth' });
     });
   }
+    // Theme toggling
+    // Initialize theme based on localStorage or default to light theme
+const toggleBtn = document.getElementById("theme-toggle");
+    const body = document.body;
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) body.className = savedTheme;
+
+    // Set initial button icon based on theme
+    if (body.classList.contains("dark-theme")) {
+      toggleBtn.textContent = "🔆"; // Sun for dark mode (switch to light)
+    } else {
+      toggleBtn.textContent = "🌙"; // Moon for light mode (switch to dark)
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-theme");
+      body.classList.toggle("light-theme");
+      const currentTheme = body.classList.contains("dark-theme") ? "dark-theme" : "light-theme";
+      localStorage.setItem("theme", currentTheme);
+      // Toggle button icon
+      if (body.classList.contains("dark-theme")) {
+        toggleBtn.textContent = "🔆"; // Sun for dark mode (switch to light)
+      } else {
+        toggleBtn.textContent = "🌙"; // Moon for light mode (switch to dark)
+      }
+    });
+    
+   
+  //    // Make sure the carousel auto-slides every 1.5 seconds
+  // var collabCarousel = document.getElementById('collabCarousel');
+  // if (collabCarousel) {
+  //   var carousel = new bootstrap.Carousel(collabCarousel, {
+  //     interval:1500,
+  //     ride: 'carousel',
+  //     pause: false,
+  //     wrap: true
+  //   });
+  // }
   
 
   // Ensure hero section animates in and is visible
@@ -107,16 +120,6 @@ window.addEventListener('DOMContentLoaded', function() {
       hero.style.transition = 'opacity 1.2s cubic-bezier(0.4,0,0.2,1)';
       hero.style.opacity = '1';
     }, 200);
-  }
-
-  // Smooth scroll for Donate Now button
-  var donateBtn = document.getElementById('hero-donate-btn');
-  var donateSection = document.getElementById('donate');
-  if (donateBtn && donateSection) {
-    donateBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      donateSection.scrollIntoView({ behavior: 'smooth' });
-    });
   }
 });
  
