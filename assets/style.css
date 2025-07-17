@@ -197,7 +197,10 @@ body.light-theme a.btn:hover {
     text-align: center;
     color: #0cc524;
    }
-    
+    /* ===============SECTION-PADDING===================== */
+    .section-padding{
+      padding: 2% 30px;
+    }
 
      /* ==============HERO============ */
      /* ================SLIDE IMAGES==========================  */
@@ -238,26 +241,8 @@ body.light-theme a.btn:hover {
 
     /* ======================JOIN-US SECTION=========================== */
     #join-us input {
-      border:0.3px solid #000000;
+      border: 1px solid #8f8e8e;
       background-color:white;
-    }
-    #join-us #message {
-      border: 1px solid #000000;
-      border-radius: 8px;
-      background-color: #fff;
-      color: #000;
-      padding: 10px;
-      transition: border-color 0.3s;
-    }
-    #join-us #message:focus {
-      border-color: #0cc524;
-      color: #074b05;
-      outline: none;
-      border: none;
-    }
-    #message{
-      border: 0.3px solid #000000;
-      color: #000000;
     }
     #Join input textarea::placeholder{
       font-size: 100px;
@@ -265,18 +250,18 @@ body.light-theme a.btn:hover {
       font-style: normal;
     } 
      #Join input :hover{
-      border-color: black;
+      border-color: rgb(114, 106, 106);
       background-color: aliceblue;
      }
 
 
      /* =============TALK TO US============ */
       #Join input {
-      border: 1px solid #000000;
+      border: 1px solid #8f8e8e;
       background-color:rgb(254, 253, 255);
     }
     #message{
-      border: 1px solid #000000;
+      border: 1px solid #afaeae;
       background-color:rgb(252, 249, 255);
     }
     #Join input textarea::placeholder{
@@ -394,17 +379,10 @@ body.light-theme a.btn:hover {
   80% { transform: scale(0.98); }
   100% { transform: scale(1); }
 }
-
-
-/*=====================COLLABORATIONS SECTION============================== */
-.collaborations-bg {
-  background-color: #f8f9fa; /* Light background for light theme */
-  transition: background-color 0.3s;
+/* =====================CONTACT-SECTION=================== */
+.contact{
+  background: #b6aeae;
 }
-body.dark-theme .collaborations-bg {
-  background-color: #181b24 !important; /* Dark background for dark theme */
-}
-
 /* ========== SOCIAL MEDIA ICONS: STANDARD WEB LOOK ========== */
 .contact-social-facebook,
 .contact-social-instagram,
@@ -474,3 +452,11 @@ body.dark-theme .contact-social-tiktok {
   text-decoration: none !important;
 }
 
+/*=====================COLLABORATIONS SECTION============================== */
+.collaborations-bg {
+  background-color: #f8f9fa; /* Light background for light theme */
+  transition: background-color 0.3s;
+}
+body.dark-theme .collaborations-bg {
+  background-color: #000000 !important; /* Dark background for dark theme */
+}
